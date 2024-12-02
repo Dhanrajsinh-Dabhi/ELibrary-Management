@@ -2,8 +2,12 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useAuth } from '../Context/AuthProvider';
 import { useNavigate, Link } from 'react-router-dom';
+<<<<<<< HEAD
 import './Login.css';
 import 'boxicons/css/boxicons.min.css';
+=======
+import '../src/App.css'
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
 
 import toast, { Toaster } from 'react-hot-toast';
 // import { response } from 'express';
@@ -20,14 +24,37 @@ function Login() {
   const [token, setToken] = useState('');
   const [LoginInputs, setLoginInputs] = useState(
     {
+<<<<<<< HEAD
       role: '',
+=======
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
       email: '',
       password: ''
     }
   );
 
 
+<<<<<<< HEAD
   
+=======
+  //   useEffect(() => {
+  //     const token = localStorage.getItem('JWT_Token');
+  //     if (token) {
+  //         axios.get('http://localhost:2000/user/auth', {
+  //             headers: { Authorization: `Bearer ${token}` },
+  //         })
+  //             .then((response) => {
+  //                 // setAuthUser(response.data);
+  //                 setIsLoggedIn(true);
+  //                 console.log("login successfully");
+  //             })
+  //             .catch((error) => {
+  //                 console.error(error);
+  //                 // localStorage.removeItem('JWT_Token');
+  //             });
+  //     }
+  // }, []);
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
   useEffect(() => {
     const token = localStorage.getItem('jwt_token');
     if (token) {
@@ -67,6 +94,7 @@ function Login() {
       alert('Please fill in all fields and ensure password is at least 8 characters and matches confirm password');
       return;
     }
+<<<<<<< HEAD
     
     console.log("LoginInputs:", LoginInputs); // Log inputs for debugging
 
@@ -105,6 +133,46 @@ function Login() {
 
 
       {/* <form onSubmit={handleOnSubmit}>
+=======
+    try {
+
+
+      const response = await axios.post('http://localhost:3000/user/login', LoginInputs, {
+        headers: { 'Content-Type': 'application/json' },
+      });
+
+
+
+      setToken(response.data.token);
+      localStorage.setItem('jwt_token', response.data.token);
+      console.log(response.data.token);
+
+      setAuthUser(LoginInputs.email);
+      setIsLoggedIn(true);
+
+      if (response.data.ok) {
+        toast.success('Login Successfully!');
+        console.log(response.data);
+        navigate('/');
+      }
+      else {
+        toast.error(response.data.message);
+      }
+    }
+    catch (err) {
+      toast.error("something happend wrong");
+      console.error(err);
+    }
+
+
+
+  }
+  return (
+    <>
+
+
+      <form onSubmit={handleOnSubmit}>
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
 
 
 
@@ -118,6 +186,7 @@ function Login() {
 
 
         <input type='submit' value="Login" disabled={!LoginInputs.email || !LoginInputs.password} />
+<<<<<<< HEAD
       </form> */}
 
 
@@ -190,3 +259,12 @@ function Login() {
 }
 
 export default Login;
+=======
+      </form>
+
+    </>
+  )
+}
+
+export default Login;
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d

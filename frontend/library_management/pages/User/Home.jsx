@@ -1,18 +1,26 @@
 import { useState,useEffect } from 'react'
 import axios from 'axios';
+<<<<<<< HEAD
 import { useLocation,useNavigate,useParams, Link } from 'react-router-dom';
+=======
+import { useNavigate, Link } from 'react-router-dom';
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
 import { useAuth } from '../../Context/AuthProvider';
 
 
 function Home() {
   const navigate = useNavigate();
+<<<<<<< HEAD
   const location = useLocation();
   let { params } = useParams();
 
+=======
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
   const { authUser,
     setAuthUser,
     isLoggedIn,
     setIsLoggedIn } = useAuth();
+<<<<<<< HEAD
     
    
   //   const [user, setUser] = useState(
@@ -119,6 +127,26 @@ function Home() {
 
       }
     },  [setAuthUser , setIsLoggedIn]);
+=======
+
+  useEffect(() => {
+        const token = localStorage.getItem('jwt_token');
+        if (token) {
+            axios.get('http://localhost:2000/user/auth', {
+                headers: { Authorization: `Bearer ${token}` },
+            })
+                .then((response) => {
+                    setAuthUser(response.data);
+                    setIsLoggedIn(true);
+                    console.log("login successfully");
+                })
+                .catch((error) => {
+                    console.error(error);
+                    // localStorage.removeItem('JWT_Token');
+                });
+        }
+    }, []);
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
   
 
   return (
@@ -130,12 +158,18 @@ function Home() {
         <div class="hero-content">
           <h1 class="hero-title">The Best Library That Every Book Lover Must Visit</h1>
           <p class="hero-description">Explore a vast collection of books and resources in a serene and
+<<<<<<< HEAD
             inspiring environment. Our library is designed to meet to all your
             reading and learning needs, provide a comfortable space for you to
             enjoy and study.</p>
             <Link to="/books" className="btn btn-light btn-lg">
             Browse Books
           </Link>
+=======
+            inspiring environment. Our library is designed to cater to all your literary needs and
+            provide a cozy space for reading and learning.</p>
+          <a href="books.html" class="btn btn-light btn-lg">Browse Books</a>
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
         </div>
       </header>
 
@@ -152,7 +186,11 @@ function Home() {
                 <img src="images/oxana-melis-P0FrzZVB7DE-unsplash.jpg"
                   class="card-img-top" alt="Category 1" />
                 <div class="card-body">
+<<<<<<< HEAD
                   <h5 class="card-title">Computer Science</h5>
+=======
+                  <h5 class="card-title">Fiction</h5>
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
                   <p class="card-text">Dive into a world of imagination and
                     creativity with our extensive collection of fiction
                     books.</p>
@@ -165,7 +203,11 @@ function Home() {
                 <img src="images/pexels-pixabay-60582.jpg" class="card-img-top"
                   alt="Category 2" />
                 <div class="card-body">
+<<<<<<< HEAD
                   <h5 class="card-title">Design</h5>
+=======
+                  <h5 class="card-title">Non-Fiction</h5>
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
                   <p class="card-text">Explore real-life stories and insights with
                     our diverse range of non-fiction books.</p>
                 </div>
@@ -177,7 +219,11 @@ function Home() {
                 <img src="images/pexels-pixabay-415071.jpg" class="card-img-top"
                   alt="Category 3" />
                 <div class="card-body">
+<<<<<<< HEAD
                   <h5 class="card-title">Management</h5>
+=======
+                  <h5 class="card-title">Science</h5>
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
                   <p class="card-text">Enhance your knowledge with our collection
                     of science books covering various fields and topics.</p>
                 </div>
@@ -189,7 +235,11 @@ function Home() {
                 <img src="images/pexels-pixabay-60582.jpg" class="card-img-top"
                   alt="Category 4" />
                 <div class="card-body">
+<<<<<<< HEAD
                   <h5 class="card-title">Law</h5>
+=======
+                  <h5 class="card-title">History</h5>
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
                   <p class="card-text">Uncover the past with our extensive range
                     of history books that delve into different eras and
                     events.</p>
@@ -202,7 +252,11 @@ function Home() {
                 <img src="images/pexels-pixabay-415071.jpg" class="card-img-top"
                   alt="Category 5" />
                 <div class="card-body">
+<<<<<<< HEAD
                   <h5 class="card-title">Commerce</h5>
+=======
+                  <h5 class="card-title">Biography</h5>
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
                   <p class="card-text">Learn about the lives of inspiring
                     individuals through our collection of biography books.
                   </p>
@@ -235,9 +289,13 @@ function Home() {
               <div class="gallery-item">
                 <img src="images/4.jpg" class="img-fluid" alt="Gallery Image 1" />
                 <div class="overlay" >
+<<<<<<< HEAD
                   <div class="text">Find Your Next Read: <br/><br/>Explore our
                                                                 extensive library collection, where you can find a wide
                                                                 range of books and resources in a comfortable setting.</div>
+=======
+                  <div class="text">Image Description 1</div>
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
                 </div>
               </div>
             </div>
@@ -246,9 +304,13 @@ function Home() {
               <div class="gallery-item">
                 <img src="images/2.jpg" class="img-fluid" alt="Gallery Image 2" />
                 <div class="overlay" >
+<<<<<<< HEAD
                   <div class="text">Explore Our Library: <br/><br/>Browse through a
                                                                 vast collection of books and resources tailored to your
                                                                 interests, all in a welcoming environment.</div>
+=======
+                  <div class="text">Image Description 2</div>
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
                 </div>
               </div>
             </div>
@@ -257,9 +319,13 @@ function Home() {
               <div class="gallery-item">
                 <img src="images/3.jpg" class="img-fluid" alt="Gallery Image 3" />
                 <div class="overlay" >
+<<<<<<< HEAD
                   <div className="text">Your Reading Haven: <br/><br/>Discover a diverse
                                                                 selection of books and enjoy a cozy space designed to
                                                                 enhance your reading and learning experience.</div>
+=======
+                  <div class="text">Image Description 3</div>
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
                 </div>
               </div>
             </div>
@@ -284,19 +350,32 @@ function Home() {
                                                         <div class="row">
                                                                 <div class="col-lg-4 col-md-5">
                                                                         <div class="testimonial-img">
+<<<<<<< HEAD
                                                                                 <img src="images/aditya.png"
+=======
+                                                                                <img src="images/user1.jpg"
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
                                                                                         class="img-fluid rounded-circle"
                                                                                         alt="User 1" />
                                                                         </div>
                                                                 </div>
                                                                 <div class="col-lg-8 col-md-7">
                                                                         <div class="testimonial-content">
+<<<<<<< HEAD
                                                                                 <h4>Aditya Rajput</h4>
                                                                                 <p class="testimonial-text">"As a coding
                                                                                         student, I appreciate how this
                                                                                         library offers a wide range of
                                                                                         tech books and a peaceful area
                                                                                         to work on my coding skills."</p>
+=======
+                                                                                <h4>John Doe</h4>
+                                                                                <p class="testimonial-text">"The library
+                                                                                        is fantastic! A peaceful haven
+                                                                                        with a diverse range of books.
+                                                                                        The staff is friendly and always
+                                                                                        willing to help."</p>
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
                                                                         </div>
                                                                 </div>
                                                         </div>
@@ -315,6 +394,7 @@ function Home() {
                                                                 </div>
                                                                 <div class="col-lg-8 col-md-7">
                                                                         <div class="testimonial-content">
+<<<<<<< HEAD
                                                                                 <h4>Emily</h4>
                                                                                 <p class="testimonial-text">"I love the
                                                                                         variety of books available
@@ -322,6 +402,14 @@ function Home() {
                                                                                         comfortable seating make it the
                                                                                         perfect spot for long reading
                                                                                         sessions."
+=======
+                                                                                <h4>Jane Smith</h4>
+                                                                                <p class="testimonial-text">"An
+                                                                                        incredible collection of books
+                                                                                        and a wonderful atmosphere. This
+                                                                                        library has become my go-to
+                                                                                        place for all my reading needs."
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
                                                                                 </p>
                                                                         </div>
                                                                 </div>
@@ -334,13 +422,18 @@ function Home() {
                                                         <div class="row">
                                                                 <div class="col-lg-4 col-md-5">
                                                                         <div class="testimonial-img">
+<<<<<<< HEAD
                                                                                 <img src="images/jevin.png"
+=======
+                                                                                <img src="images/user3.jpg"
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
                                                                                         class="img-fluid rounded-circle"
                                                                                         alt="User 3" />
                                                                         </div>
                                                                 </div>
                                                                 <div class="col-lg-8 col-md-7">
                                                                         <div class="testimonial-content">
+<<<<<<< HEAD
                                                                                 <h4>Jevin Kotak</h4>
                                                                                 <p class="testimonial-text">"A wonderful
                                                                                         place to explore books and enjoy
@@ -348,6 +441,15 @@ function Home() {
                                                                                         find what you’re looking for,
                                                                                         and the environment is
                                                                                         relaxing."</p>
+=======
+                                                                                <h4>Emily Johnson</h4>
+                                                                                <p class="testimonial-text">"I love the
+                                                                                        variety of genres available
+                                                                                        here. The quiet environment and
+                                                                                        comfortable seating make it the
+                                                                                        perfect spot for long reading
+                                                                                        sessions."</p>
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
                                                                         </div>
                                                                 </div>
                                                         </div>

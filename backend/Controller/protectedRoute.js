@@ -1,7 +1,11 @@
 const db = require('../config/dbConnection');
 const Student = require('../Model/Student');
+<<<<<<< HEAD
 const Book=require('../Model/Book');        
 const mongoose = require('mongoose');
+=======
+const Book=require('../Model/Book');
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
 
 const Home = async (req, res) => {
     console.log('home route from backend');
@@ -65,15 +69,22 @@ const AllBooks=async(req,res)=>{
     
     try {
         // const posts = await Post.find().populate('postedBy', '_id name').populate('like', '_id name').populate('comment.postedBy', '_id name');
+<<<<<<< HEAD
         const book = await Book.find();
         // console.log("book seneded to clinet");
         // console.log(':',book);
          return res.json({ book, ok: true });
+=======
+        const Book = await Book.find().exec();
+        console.log("book seneded to clinet");
+         return res.json({ Book, ok: true });
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
     } catch (error) {
         return res.status(400).json({ error: 'Error fetching posts', error ,ok:false});
     }
 };
 
+<<<<<<< HEAD
 const deleteBook = async (req, res) => {
     try {
       const bookId = req.params.bookId;
@@ -122,3 +133,9 @@ const updateBook = async (req, res) => {
 
 
 module.exports = { Home, allUser,ProfileUpdate,AllBooks,deleteBook,updateBook,getBook };
+=======
+
+
+
+module.exports = { Home, allUser,ProfileUpdate,AllBooks };
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d

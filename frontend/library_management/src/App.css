@@ -9,6 +9,7 @@ body {
 body {
         display: flex;
         flex-direction: column;
+<<<<<<< HEAD
  
 }
 
@@ -79,6 +80,239 @@ body {
         color: #ffffff;
 }
 
+=======
+}
+
+
+/* Login Css */
+/* Style for the login page */
+.login-body {
+        background: url(./images/6.jpg) no-repeat center center fixed;
+        /* Adjusted path for login background */
+        background-size: cover;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        /* Consistent font */
+}
+
+/* Card styling specific to the login */
+.login-card {
+        max-width: 420px;
+        width: 100%;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        /* Darker shadow for better contrast */
+        backdrop-filter: blur(10px);
+        background: rgba(0, 0, 0, 0.2);
+        /* Darker semi-transparent background */
+        margin: 0 auto;
+        /* Center horizontally */
+}
+
+
+
+/* Logo in the login card */
+.login-card-logo {
+        width: 50%;
+        display: block;
+        margin: 0 auto 20px;
+}
+
+/* Title in the login card */
+.login-card-title {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #fff;
+        /* White text color for better visibility */
+}
+
+/* Form control styling for the login page */
+.login-form-control {
+        border-radius: 40px;
+}
+
+/* Input group text styling for the login */
+.login-input-group-text {
+        background: transparent;
+        border: none;
+        color: #fff;
+        /* White text color */
+}
+
+/* Label text styling for the login form */
+.login-form-group label {
+        color: #fff;
+        /* White color for better contrast */
+        font-weight: 500;
+}
+
+/* Primary button styling for the login */
+.login-btn-primary {
+        background-color: #007BFF;
+        /* Visible color */
+        color: #fff;
+        /* White text for contrast */
+        font-weight: 600;
+        border-radius: 40px;
+        border: none;
+        /* Remove border */
+}
+
+.login-btn-primary:hover {
+        background-color: #0056b3;
+        /* Darker shade for hover */
+        color: #fff;
+        /* Ensure text remains white on hover */
+}
+
+/* Remember me and forgot password text styling for login */
+.login-form-check-label,
+.login-text-muted {
+        color: #bbb !important;
+        /* Light grey for better visibility */
+}
+
+/* Text-center link styling for login */
+.login-text-center {
+        color: #fff;
+        /* Ensure the text is white */
+        font-size: 14px;
+        /* Adjust font size for better readability */
+}
+
+.login-text-center a {
+        color: #00f;
+        /* Bright blue for visibility */
+}
+
+.login-text-center a:hover {
+        text-decoration: underline;
+}
+
+
+
+/* sign-up css */
+/* Sign-Up Page Styling */
+.signup-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: url(./images/6.jpg) no-repeat center center fixed;
+        background-size: cover;
+        background-position: center;
+}
+
+.signup-wrapper {
+        width: 350px;
+        background: rgba(0, 0, 0, 0.2);
+        /* Semi-transparent dark background */
+        /* border: 2px solid rgba(255, 255, 255, 0.3); */
+        /* Slightly visible border */
+        backdrop-filter: blur(10px);
+        /* Background blur for readability */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        /* Darker shadow for better contrast */
+        color: #fff;
+        /* White text color for visibility */
+        border-radius: 15px;
+        padding: 30px 40px;
+}
+
+.signup-wrapper img {
+        width: 50%;
+        display: block;
+        margin: 0 auto 20px;
+        /* Centering the logo */
+}
+
+.signup-wrapper h1 {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 20px;
+}
+
+.signup-input-box {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 20px 0;
+        /* Adjust margin for spacing */
+}
+
+.signup-input-box input {
+        width: 90%;
+        height: 70%;
+        background: rgba(255, 255, 255, 0.2);
+        /* Light semi-transparent background */
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        /* Light border for visibility */
+        border-radius: 40px;
+        font-size: 16px;
+        color: #fff;
+        /* White text color */
+        padding: 10px 20px;
+}
+
+.signup-input-box input::placeholder {
+        color: rgba(255, 255, 255, 0.8);
+        /* Slightly lighter placeholder text */
+}
+
+.signup-input-box i {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: #fff;
+        /* Icon color to match text */
+}
+
+.signup-btn {
+        width: 100%;
+        height: 45px;
+        background: #007bff;
+        /* Primary button color */
+        border: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        /* Soft shadow */
+        cursor: pointer;
+        font-size: 16px;
+        color: #fff;
+        /* White text for the button */
+        font-weight: 600;
+}
+
+.signup-btn:hover {
+        background: #0056b3;
+        /* Darker button color on hover */
+}
+
+.signup-register-link {
+        font-size: 14.5px;
+        text-align: center;
+        margin: 20px 0 15px;
+}
+
+.signup-register-link p a {
+        color: #007bff;
+        /* Link color to stand out */
+        text-decoration: none;
+        font-weight: 600;
+}
+
+.signup-register-link p a:hover {
+        text-decoration: underline;
+}
+
+
+
+
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
 
 /* Navbar styling */
 .navbar {
@@ -154,7 +388,11 @@ body {
         /* Optional: dark overlay for better text readability */
         border-radius: 10px;
         padding: 20px;
+<<<<<<< HEAD
         margin-left: 140px;
+=======
+        /* margin-left: 150px; */
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
         /* Adjust margin to move the content slightly from the left edge */
 }
 
@@ -396,7 +634,374 @@ body {
 
 
 
+<<<<<<< HEAD
 
+=======
+/* Footer Styling */
+.footer {
+        background-color: #343a40;
+        color: #f8f9fa;
+        padding: 40px 0;
+        margin-top: 50px;
+}
+
+.footer h5 {
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+        font-weight: 600;
+        color: #fff;
+}
+
+.footer p,
+.footer ul,
+.footer li {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 10px;
+}
+
+.footer-description {
+        max-width: 250px;
+}
+
+.footer a {
+        color: #f8f9fa;
+        text-decoration: none;
+        transition: color 0.3s;
+}
+
+.footer a:hover {
+        color: #adb5bd;
+}
+
+.footer .social-icons {
+        display: flex;
+        gap: 15px;
+}
+
+.footer .social-icons a {
+        font-size: 1.2rem;
+        color: #f8f9fa;
+        transition: color 0.3s, transform 0.3s;
+}
+
+.footer .social-icons a:hover {
+        color: #adb5bd;
+        transform: scale(1.1);
+}
+
+
+
+.footer .fas,
+.footer .fab {
+        margin-right: 10px;
+}
+
+.footer hr {
+        border-top: 1px solid #495057;
+}
+
+.footer p {
+        margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About Us Hero Section */
+.about-hero {
+        background: url('images/') no-repeat center center/cover;
+        color: #fff;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 15px;
+        position: relative;
+        margin-top: 80px;
+        /* Adjust this value if your navbar height is different */
+        z-index: 1;
+        /* Ensure the hero section is above the navbar */
+        background-blur: 8px;
+        /* Optional: Add a blur effect to the background */
+
+}
+
+.about-hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #fff;
+        /* Ensure the text is white for visibility */
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+        /* Add shadow for better readability */
+}
+
+.about-hero p {
+        font-size: 1.25rem;
+        max-width: 600px;
+}
+
+.about-hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        /* Add a dark overlay */
+        z-index: 1;
+}
+
+.about-hero .container {
+        position: relative;
+        z-index: 2;
+        /* Ensure text is above the overlay */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+
+/* Our Story Section */
+.our-story {
+        padding: 50px 0;
+        background-color: #f8f9fa;
+}
+
+.our-story h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+}
+
+.our-story img {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+}
+
+.our-story p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #555;
+        margin-top: 20px;
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+        padding: 50px 0;
+        background-color: #fff;
+}
+
+.mission-vision h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+        text-align: center;
+        color: #343a40;
+}
+
+.mission-vision .mission,
+.mission-vision .vision {
+        padding: 30px;
+        border-radius: 10px;
+        background-color: #f8f9fa;
+        text-align: center;
+        transition: all 0.3s ease;
+}
+
+.mission-vision .mission:hover,
+.mission-vision .vision:hover {
+        background-color: #e9ecef;
+        transform: translateY(-5px);
+}
+
+.mission-vision h3 {
+        font-size: 1.75rem;
+        margin-bottom: 20px;
+}
+
+.mission-vision p {
+        font-size: 1.1rem;
+        color: #555;
+}
+
+/* Meet the Team Section */
+.team {
+        padding: 50px 0;
+        background-color: #f8f9fa;
+}
+
+.team h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+        text-align: center;
+        color: #343a40;
+}
+
+.team .card {
+        transition: all 0.3s ease;
+        background-color: #fff;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.team .card:hover {
+        transform: translateY(-10px);
+}
+
+.team .card-img-top {
+        max-height: 150px;
+        max-width: 150px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team .card-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #343a40;
+        margin-bottom: 10px;
+}
+
+.team .card-text {
+        font-size: 1rem;
+        color: #6c757d;
+        text-align: center;
+}
+
+
+
+/* Library Features Section */
+.library-features {
+        padding: 50px 0;
+        background-color: #fff;
+}
+
+.library-features h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+        text-align: center;
+        color: #343a40;
+}
+
+.library-features .feature {
+        text-align: center;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: #f8f9fa;
+        transition: all 0.3s ease;
+}
+
+.library-features .feature:hover {
+        background-color: #e9ecef;
+        transform: translateY(-5px);
+}
+
+.library-features i {
+        font-size: 3rem;
+        color: #007bff;
+        margin-bottom: 20px;
+}
+
+.library-features h4 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #343a40;
+        margin-bottom: 15px;
+}
+
+.library-features p {
+        font-size: 1.1rem;
+        color: #555;
+}
+
+/* Footer Section */
+.footer {
+        background-color: #343a40;
+        color: #f8f9fa;
+        padding: 40px 0;
+        margin-top: 50px;
+}
+
+.footer h5 {
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+        font-weight: 600;
+        color: #fff;
+}
+
+.footer p,
+.footer ul,
+.footer li {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 10px;
+}
+
+.footer-description {
+        max-width: 250px;
+}
+
+.footer a {
+        color: #f8f9fa;
+        text-decoration: none;
+        transition: color 0.3s;
+}
+
+.footer a:hover {
+        color: #adb5bd;
+}
+
+.footer .social-icons {
+        display: flex;
+        gap: 15px;
+}
+
+.footer .social-icons a {
+        font-size: 1.2rem;
+        color: #f8f9fa;
+        transition: color 0.3s, transform 0.3s;
+}
+
+.footer .social-icons a:hover {
+        color: #adb5bd;
+        transform: scale(1.1);
+}
+
+.footer .fas,
+.footer .fab {
+        margin-right: 10px;
+}
+
+.footer hr {
+        border-top: 1px solid #495057;
+}
+
+.footer p {
+        margin-bottom: 0;
+}
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
 
 
 
@@ -933,6 +1538,7 @@ button[type="submit"]:hover {
 
 .book-card .btn:hover {
         background-color: #0056b3;
+<<<<<<< HEAD
 }
 
 
@@ -1116,3 +1722,6 @@ button[type="submit"]:hover {
             flex-direction: column;
         }
     }
+=======
+}
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d

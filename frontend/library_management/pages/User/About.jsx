@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
+<<<<<<< HEAD
 import './About.css';
+=======
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
 
 
 function About() {
@@ -18,7 +21,11 @@ function About() {
         </section>
 
         {/* <!-- Our Story Section --> */}
+<<<<<<< HEAD
         <section class="our-story">
+=======
+        <section class="our-story py-5">
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
                 <div class="container">
                         <div class="row">
                                 <div class="col-md-6">
@@ -86,9 +93,15 @@ function About() {
                                                 <div class="card-body">
                                                         <h5 class="card-title">Dhanrajsinh Dabhi</h5>
                                                         <p class="card-text">BackEnd Developer</p>
+<<<<<<< HEAD
                                                         <p class="card-text">Our backend developer specializes in
                                                                 server-side logic, database management, and seamless
                                                                 data flow, ensuring efficient performance and security.
+=======
+                                                        <p class="card-text">dhanrajsinh is passionate about books and has over
+                                                                20 years of experience in library management. He leads
+                                                                our team with dedication and a commitment to excellence.
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
                                                         </p>
                                                 </div>
                                                 
@@ -102,10 +115,16 @@ function About() {
                                                 <div class="card-body">
                                                         <h5 class="card-title">Kirtan Kalathiya</h5>
                                                         <p class="card-text">Database Manager</p>
+<<<<<<< HEAD
                                                         <p class="card-text">Our first database manager designs
                                                                 efficient database structures, ensures data integrity,
                                                                 and optimizes performance while maintaining strong data
                                                                 security.</p>
+=======
+                                                        <p class="card-text">Jane is an expert in research and reference
+                                                                services. She assists visitors in finding the
+                                                                information they need with a smile.</p>
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
                                                 </div>
                                         </div>
                                 </div>
@@ -117,9 +136,15 @@ function About() {
                                                 <div class="card-body">
                                                         <h5 class="card-title">Manish Makawana</h5>
                                                         <p class="card-text">Database Manager</p>
+<<<<<<< HEAD
                                                         <p class="card-text">Our second database manager handles
                                                                 large-scale databases, troubleshoots issues, and ensures
                                                                 reliable data storage and smooth data flow.</p>
+=======
+                                                        <p class="card-text">Emily manages our digital collection,
+                                                                ensuring that our online resources are accessible and
+                                                                up-to-date.</p>
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
                                                 </div>
                                         </div>
                                 </div>
@@ -130,10 +155,16 @@ function About() {
                                                 <div class="card-body">
                                                         <h5 class="card-title">Meet Pattani</h5>
                                                         <p class="card-text">FrontEnd Developer</p>
+<<<<<<< HEAD
                                                         <p class="card-text">Our front-end developer excels in
                                                                 creating visually appealing and responsive web designs,
                                                                 ensuring a seamless user experience with clean and
                                                                 efficient code.</p>
+=======
+                                                        <p class="card-text">Emily manages our digital collection,
+                                                                ensuring that our online resources are accessible and
+                                                                up-to-date.</p>
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
                                                 </div>
                                         </div>
                                 </div>
@@ -144,10 +175,16 @@ function About() {
                                                 <div class="card-body">
                                                         <h5 class="card-title">Kishor Suthar</h5>
                                                         <p class="card-text">FrontEnd Developer</p>
+<<<<<<< HEAD
                                                         <p class="card-text">Our front-end developer specializes
                                                                 in enhancing interfaces, optimizing performance, and
                                                                 implementing features for smooth and engaging user
                                                                 experience.</p>
+=======
+                                                        <p class="card-text">Emily manages our digital collection,
+                                                                ensuring that our online resources are accessible and
+                                                                up-to-date.</p>
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
                                                 </div>
                                         </div>
                                 </div>

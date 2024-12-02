@@ -5,7 +5,10 @@ import Home from '../pages/User/Home'
 import About from '../pages/User/About'
 import UserProfile from '../pages/User/UserProfile'
 import Login from '../pages/Login'
+<<<<<<< HEAD
 import Cart from '../pages/Cart';
+=======
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
 import Register from '../pages/Register'
 import ContactUs from '../pages/ContactUs'
 import { useAuth } from '../Context/AuthProvider'
@@ -18,6 +21,7 @@ import User_Profile from '../pages/User/UserProfile'
 
 import toast, { Toaster } from 'react-hot-toast';
 import Admin from '../pages/Admin/Admin'
+<<<<<<< HEAD
 import BookUpdate from '../pages/Admin/BookUpdate'
 import IssuedBooks from '../pages/Admin/IssuedBooks'
 import AddBook from '../pages/Admin/AddBook'
@@ -29,6 +33,9 @@ import BookRequest from '../pages/BookRequest'
 import ForgotPassword from '../pages/ForgotPassword'
 import ContactQueries from '../pages/Admin/ContactQueries'
 import BookRequests from '../pages/Admin/BookRequests'
+=======
+
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
 
 
 function PrivateRoute({ children }) {
@@ -57,6 +64,7 @@ function App() {
           <Route exact path='/' element={<PrivateRoute><Home /></PrivateRoute>} />
           <Route exact path='/about' element={<PrivateRoute><About /></PrivateRoute>} />
           <Route exact path='/contact' element={<PrivateRoute><ContactUs /></PrivateRoute>} />
+<<<<<<< HEAD
           <Route exact path='/register' element={<PublicRoute><Register /></PublicRoute>} />
           <Route exact path='/login' element={<PublicRoute><Login /></PublicRoute>} />
           <Route exact path='/otp-verification' element={<PublicRoute><OTPVerification /></PublicRoute>} />
@@ -82,6 +90,14 @@ function App() {
 
 
 
+=======
+          <Route exact path='/login' element={<PublicRoute><Login /></PublicRoute>} />
+          <Route exact path='/register' element={<PublicRoute><Register /></PublicRoute>} />
+          <Route exact path='/profile' element={<PrivateRoute><User_Profile /></PrivateRoute>} />
+          <Route exact path='/profile/update' element={<PrivateRoute><UpdateUserProfile /></PrivateRoute>} />
+          <Route exact path='/books' element={<PrivateRoute><OurBooks /></PrivateRoute>} />
+          <Route exact path='/admin' element={<Admin />} />
+>>>>>>> cb17a1bbfeafe2128bf841412e5c61f97dd9249d
         </Routes>
         <Toaster
           position="top-center"
